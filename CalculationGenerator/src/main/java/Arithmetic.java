@@ -17,7 +17,7 @@ import java.util.*;
  * @param -n: the number of generating problems
  * @param -r: the range of value
  * @date 2023/9/25 9:35
- * @Version 1.0
+ * @Version 1.1
  */
 public class Arithmetic {
     //题目数
