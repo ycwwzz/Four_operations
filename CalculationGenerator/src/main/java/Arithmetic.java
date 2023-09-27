@@ -239,7 +239,7 @@ public class Arithmetic {
             }
         }
         StringBuilder sb = new StringBuilder();
-        sb.append("Correct:").append(InCorrectNum);
+        sb.append("Wrong:").append(InCorrectNum);
         sb.append("(");
         for (Integer i:
                 order) {
@@ -248,7 +248,7 @@ public class Arithmetic {
                 sb.append(",");
         }
         sb.append(")\n");
-        sb.append("Wrong:").append(correctNum);
+        sb.append("Correct:").append(correctNum);
         sb.append("(");
         for (Integer i:
                 correct) {
