@@ -16,7 +16,7 @@ public class test {
     @Test
     public void all() throws IOException {
 
-        String s = AlgoArithmetic.work(100, 10, "..\\..\\..\\Answers.txt" ,"..\\..\\..\\Exercises.txt");
+        String s = Arithmetic.work(100, 10, "..\\..\\..\\Answers.txt" ,"..\\..\\..\\Exercises.txt");
         System.out.println(s);
 
     }
@@ -27,7 +27,7 @@ public class test {
         String re;
         //加法
         String f1 = "4 + 3 * 3/4";
-        re = new AlgoCalculate(f1).result;
+        re = new Calculate(f1).result;
         System.out.println("加法："+re);
 
         //减法出现负数
@@ -37,17 +37,17 @@ public class test {
 
         //乘法
         String f3 = "6 * ( 1/3 * 6 )";
-        re = new AlgoCalculate(f3).result;
+        re = new Calculate(f3).result;
         System.out.println("乘法："+re);
 
         //除法
         String f4 = "8/16 ÷ 6/10 ÷ 9/14 ÷ 9";
-        re = new AlgoCalculate(f4).result;
+        re = new Calculate(f4).result;
         System.out.println("除法："+re);
 
         //除法分母为0，注：分母为0的条件下自定义结果为0，虽然可能是无穷大
         String f5 = "10 ÷ ( 5 - 5 )";
-        re = new AlgoCalculate(f5).result;
+        re = new Calculate(f5).result;
         System.out.println("分母为0："+re);
 
     }

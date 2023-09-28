@@ -12,9 +12,9 @@ import java.util.regex.Pattern;
  * @Description 对表达式进行计算，涉及到：整数四则计算；真分数四则运算
  * @date 25/9/2023
  */
-public class AlgoCalculate {
+public class Calculate {
     public String result;
-    public AlgoCalculate(String formula) {
+    public Calculate(String formula) {
         List<String> rpn = initRPN(formula);
         result = processCalculate(rpn);
     }
