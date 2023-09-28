@@ -1,7 +1,6 @@
 import jdk.jfr.StackTrace;
 import org.junit.Test;
 
-import java.io.FileSystem;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -32,7 +31,7 @@ public class test {
 
         //减法出现负数
         String f2 = "3 - 4";
-        boolean ok = AlgoArithmetic.end(f2);
+        boolean ok = Arithmetic.end(f2);
         if (!ok) System.out.println("结果为负数，请重新输入");
 
         //乘法
@@ -55,6 +54,6 @@ public class test {
     //学生未完成作业
     @Test
     public void falseWork() throws IOException {
-        AlgoArithmetic.check("..\\..\\..\\Exercises.txt","..\\..\\..\\Answers.txt","..\\..\\..\\Grade.txt");
+        Arithmetic.check("..\\..\\..\\Exercises.txt","..\\..\\..\\Answers.txt","..\\..\\..\\Grade.txt");
     }
 }
